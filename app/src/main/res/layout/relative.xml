@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/feedbackcrop"
+            android:id="@+id/imageView2"/>
+    <TextView
+            android:text="FEEDBACK"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:id="@+id/textView2" android:layout_marginBottom="-18dp" android:layout_above="@+id/textView"
+            android:layout_height="180dp" android:paddingLeft="50dp"/>
+
+    <EditText
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:layout_marginTop="-10dp" android:layout_below="@+id/imageView2"
+            android:hint="Thanks a lot for the awesome service"/>
+    <Button
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView2"
+            android:id="@+id/button" android:layout_marginBottom="-331dp" android:background="@color/colorPrimary"
+            style="@style/Widget.AppCompat.Button"/>
+
+</RelativeLayout>
